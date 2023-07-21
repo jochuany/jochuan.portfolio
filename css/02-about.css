@@ -1,0 +1,151 @@
+.title {
+  width: 960px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--word);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  padding-top: 30px;
+}
+
+.content .pic-name {
+  width: 300px;
+}
+
+.content .pic-name img {
+  width: 200px;
+  filter: grayscale(80%);
+  margin-bottom: 20px;
+}
+
+.content .pic-name h3 {
+  color: var(--word);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content .pic-name a {
+  margin-top: 30px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: var(--primary) dotted 2px;
+  transition: ease 0.3s;
+}
+
+.content .pic-name a:hover {
+  letter-spacing: 3px;
+}
+
+.content .info {
+  width: 660px;
+}
+
+.content .info .para {
+  height: 220px;
+  color: var(--word);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.content .info h2 {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content .info .tool-use {
+  height: 220px;
+}
+
+.content .info .tool-use .icon img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.content .info .edu {
+  height: 300px;
+}
+
+.content .info .detail {
+  color: var(--word);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.content .info .detail .con-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.content .info .detail .con-detail .year {
+  width: 200px;
+}
+
+.content .info .detail .con-detail .place {
+  width: 400px;
+}
+
+.content .info .exp .detail .con-detail ul {
+  list-style-type: disc;
+  margin: 20px 0px 0px 20px;
+  color: var(--info);
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    width: 600px;
+  }
+  .content {
+    width: 600px;
+    justify-content: space-between;
+  }
+  .content .pic-name {
+    width: 200px;
+  }
+  .content .pic-name img {
+    width: 200px;
+  }
+  .content .info {
+    width: 350px;
+  }
+  .content .info .tool-use img {
+    margin-bottom: 10px;
+  }
+  .content .detail .con-detail {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+    width: 80%;
+  }
+  .content {
+    width: 80%;
+    display: block;
+  }
+  .content .pic-name {
+    width: 100%;
+  }
+  .content .info {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .content .info .para {
+    font-size: 12px;
+  }
+}
