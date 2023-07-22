@@ -36,6 +36,9 @@
 .top .pre-next a:hover {
   letter-spacing: 3px;
 }
+.top .pre-next .trans {
+  display: none;
+}
 .top .proj-detail {
   height: 120px;
   display: flex;
@@ -156,9 +159,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .top .pre-next .trans {
-    display: none;
   }
 
   /* .mob-pre {

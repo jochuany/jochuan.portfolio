@@ -34,27 +34,35 @@ h1 {
 }
 .main .logo img {
   width: 200px;
+  opacity: 0;
+  animation: logo-appear 2.5s 1.5s ease-in-out forwards;
 }
 .main .down-btn {
   text-decoration: none;
   color: var(--word);
   font-size: 30px;
-  transform: scaleY(120%);
   margin-bottom: 50px;
-  animation: arrow 1.5s infinite ease;
+  opacity: 0;
+  animation: arrow-move 2.5s 1.5s ease-in-out forwards;
 }
 
-@keyframes arrow {
+@keyframes logo-appear {
   0% {
-    transform: translateY(-40px);
-    color: transparent;
+    opacity: 0;
   }
-  50% {
-    color: var(--word);
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0px);
-    color: transparent;
+    opacity: 1;
   }
 }
 

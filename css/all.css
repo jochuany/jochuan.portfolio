@@ -8,8 +8,11 @@ html {
   --bgc: #181818;
 }
 body {
+  opacity: 0;
   background-color: var(--bgc);
+  transition: opacity 1.5s ease-in-out;
 }
+
 .en {
   font-family: "Ysabeau Office", sans-serif;
   letter-spacing: 1px;
@@ -95,6 +98,9 @@ a {
   .footer {
     width: 600px;
   }
+  #ham-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -108,6 +114,7 @@ a {
   .header .nav-btn {
     display: none;
   }
+
   .header .ham-nav {
     width: 25px;
     display: block;
@@ -139,5 +146,14 @@ a {
     font-weight: 700;
     display: inline-block;
     margin: 20px 0px;
+  }
+
+  #ham-menu {
+    opacity: 0;
+    display: none;
+  }
+  #ham-menu.show {
+    opacity: 1;
+    display: block;
   }
 }
