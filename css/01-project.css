@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+h1 {
   color: var(--word);
   font-size: 30px;
   font-weight: 700;
@@ -14,6 +17,7 @@
 .list {
   width: 960px;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .list a {
@@ -50,18 +54,23 @@
 
 .list .project .proj-info .proj-name {
   color: var(--word);
-  font-size: 20px;
   font-weight: 700;
 }
 
 .list .project .proj-info .proj-name .ch {
   margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.list .project .proj-info .proj-name .ch {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .list .project .proj-info .proj-detail {
   display: flex;
   color: var(--info);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -73,6 +82,9 @@
   .title {
     width: 600px;
   }
+  h1 {
+    font-size: 25px;
+  }
   .list {
     width: 600px;
   }
@@ -83,21 +95,23 @@
     width: 260px;
   }
   .list .project .proj-info .proj-name {
-    font-size: 14px;
+    font-size: 16px;
   }
   .list .project .proj-info .proj-name .ch {
     margin-bottom: 0px;
   }
   .list .project .proj-info .proj-detail {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 720px) {
   .title {
     width: 80%;
-    font-size: 20px;
     margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 20px;
   }
   .list {
     width: 80%;
@@ -114,6 +128,7 @@
   }
   .list .project .proj-info {
     width: 100%;
+    height: 150px;
     margin-left: 0px;
     margin-top: 20px;
   }

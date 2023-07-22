@@ -13,12 +13,12 @@ body {
 .en {
   font-family: "Ysabeau Office", sans-serif;
   letter-spacing: 1px;
-  line-height: 26px;
+  line-height: 28px;
 }
 .ch {
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 3px;
-  line-height: 26px;
+  line-height: 28px;
 }
 a {
   text-decoration: none;
@@ -62,11 +62,22 @@ a {
 
 .footer {
   width: 960px;
-  height: 100px;
+  height: 150px;
   display: flex;
+  flex-direction: column;
   margin: auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+.footer .to-top a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 14px;
+  border-bottom: var(--primary) dotted 2px;
+  transition: ease 0.3s;
+}
+.footer .to-top a:hover {
+  letter-spacing: 5px;
 }
 
 .footer .copyright {
