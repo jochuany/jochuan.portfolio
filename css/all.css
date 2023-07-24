@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  cursor: url(../image/00-main/arrow.png), auto;
+}
+a {
+  cursor: url(../image/00-main/point.png), auto;
 }
 :root {
   --primary: #ffe38f;
@@ -11,6 +15,9 @@ body {
   opacity: 0;
   background-color: var(--bgc);
   transition: opacity 1.5s ease-in-out;
+}
+*::selection {
+  background-color: #daa300;
 }
 
 .en {
@@ -30,7 +37,7 @@ a {
 
 .header {
   width: 960px;
-  height: 100px;
+  height: 80px;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -39,14 +46,16 @@ a {
 .header .home a,
 .header .nav a {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header .home-btn {
   color: var(--word);
   transition: ease 0.3s;
 }
 .header .home-btn:hover {
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
+  color: var(--info);
+  font-weight: 700;
 }
 .header .nav-btn {
   color: var(--word);
@@ -54,7 +63,9 @@ a {
   transition: ease 0.3s;
 }
 .header .nav-btn:hover {
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
+  color: var(--info);
+  font-weight: 700;
 }
 .header .active {
   color: var(--primary);
@@ -76,11 +87,12 @@ a {
   text-decoration: none;
   color: var(--primary);
   font-size: 14px;
-  border-bottom: var(--primary) dotted 2px;
+  /* border-bottom: var(--primary) dotted 2px; */
   transition: ease 0.3s;
 }
 .footer .to-top a:hover {
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
+  color: var(--info);
 }
 
 .footer .copyright {
@@ -126,6 +138,7 @@ a {
     height: 2px;
     margin-bottom: 6px;
     background-color: var(--word);
+    transition: 0.3s ease;
   }
 
   .ham-menu {
@@ -138,11 +151,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease;
   }
   .ham-menu a {
     text-decoration: none;
     color: var(--word);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     display: inline-block;
     margin: 20px 0px;
@@ -155,5 +169,14 @@ a {
   #ham-menu.show {
     opacity: 1;
     display: block;
+  }
+  .line-1-45 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .line-2-disapear {
+    opacity: 0;
+  }
+  .line-3-45 {
+    transform: rotate(-45deg) translate(6px, -7px);
   }
 }

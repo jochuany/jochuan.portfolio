@@ -10,7 +10,7 @@
   margin-bottom: 70px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--primary);
   font-weight: 700;
 }
@@ -26,7 +26,7 @@ h1 {
 }
 
 .main {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,9 +41,17 @@ h1 {
   text-decoration: none;
   color: var(--word);
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   opacity: 0;
   animation: arrow-move 2.5s 1.5s ease-in-out forwards;
+  transition: 0.5s ease;
+  text-align: center;
+}
+.main .down-btn:hover {
+  color: var(--info);
+}
+.main .down-btn p {
+  font-size: 14px;
 }
 
 @keyframes logo-appear {
@@ -82,12 +90,12 @@ h1 {
 }
 .project .project-pic img:hover {
   filter: grayscale(0%);
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .para {
   color: var(--word);
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
@@ -99,7 +107,7 @@ h1 {
     width: 150px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .project {
     margin-bottom: 100px;
@@ -120,7 +128,7 @@ h1 {
     margin-bottom: 50px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .more-btn a {
     font-size: 14px;

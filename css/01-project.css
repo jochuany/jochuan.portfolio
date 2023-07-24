@@ -10,7 +10,7 @@
 
 h1 {
   color: var(--word);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -55,22 +55,14 @@ h1 {
 .list .project .proj-info .proj-name {
   color: var(--word);
   font-weight: 700;
-}
-
-.list .project .proj-info .proj-name .ch {
   margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.list .project .proj-info .proj-name .ch {
-  margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .list .project .proj-info .proj-detail {
   display: flex;
   color: var(--info);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -83,7 +75,7 @@ h1 {
     width: 600px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .list {
     width: 600px;
@@ -111,7 +103,7 @@ h1 {
     margin-bottom: 30px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .list {
     width: 80%;
