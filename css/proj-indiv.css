@@ -30,11 +30,12 @@
 }
 .top .pre-next a {
   color: var(--primary);
-  border-bottom: var(--primary) dotted 2px;
+  /* border-bottom: var(--primary) dotted 2px; */
   transition: ease 0.3s;
 }
 .top .pre-next a:hover {
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+  color: var(--info);
 }
 .top .pre-next .trans {
   display: none;
@@ -55,7 +56,8 @@
   transition: ease 0.3s;
 }
 .top .proj-detail .det-content a:hover {
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+  color: var(--info);
 }
 
 .section {

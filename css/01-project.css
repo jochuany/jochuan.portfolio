@@ -31,12 +31,12 @@ h1 {
   padding: 30px 0px;
 }
 
-.list .project:hover {
-  margin-left: 20px;
+.list .project .proj-pic {
+  width: 300px;
 }
 
 .list .project img {
-  width: 360px;
+  width: 100%;
   filter: grayscale(80%);
   transition: ease 0.3s;
 }
@@ -56,7 +56,7 @@ h1 {
   color: var(--word);
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .list .project .proj-info .proj-detail {
@@ -83,8 +83,8 @@ h1 {
   .list .project {
     width: 600px;
   }
-  .list .project img {
-    width: 260px;
+  .list .project .proj-pic {
+    width: 250px;
   }
   .list .project .proj-info .proj-name {
     font-size: 16px;
@@ -115,12 +115,15 @@ h1 {
     width: 100%;
     display: block;
   }
+  .list .project .proj-pic {
+    width: 100%;
+  }
   .list .project img {
     width: 100%;
   }
   .list .project .proj-info {
     width: 100%;
-    height: 150px;
+    height: fit-content;
     margin-left: 0px;
     margin-top: 20px;
   }

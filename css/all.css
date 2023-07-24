@@ -45,6 +45,7 @@ a {
 }
 .header .home a,
 .header .nav a {
+  border-radius: 20px;
   font-weight: 700;
   font-size: 16px;
 }
