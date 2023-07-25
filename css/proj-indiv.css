@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 }
 .top .proj-name {
-  height: 300px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,30 +18,32 @@
   font-weight: 700;
 }
 .top .proj-name .name .ch {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .top .pre-next {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 .top .pre-next span {
-  color: var(--word);
+  color: var(--primary);
   margin: 0px 10px;
 }
 .top .pre-next a {
   color: var(--primary);
-  /* border-bottom: var(--primary) dotted 2px; */
+  border-bottom: var(--primary) solid 1px;
   transition: ease 0.3s;
 }
 .top .pre-next a:hover {
-  /* letter-spacing: 3px; */
   color: var(--info);
+  border-bottom: var(--info) solid 1px;
 }
 .top .pre-next .trans {
   display: none;
 }
 .top .proj-detail {
-  height: 120px;
+  height: 150px;
   display: flex;
   align-items: flex-end;
   color: var(--info);

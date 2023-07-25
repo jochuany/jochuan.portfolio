@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JoChuan | About</title>
+    <title>About | JoChuan.</title>
     <link rel="icon" type="image/x-icon" href="../image/00-main/favicon.png" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/font.css" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/02-about.css" />
     <script src="../js/all.js"></script>
   </head>
-  <body onload="loadFade()">
+  <body onload="loadFade(), checkMode()">
     <!-- ham-menu -->
     <div id="ham-menu">
       <div class="ham-menu">
@@ -32,6 +32,7 @@
         <a class="nav-btn en" href="01-project.html">PROJECT</a>
         <a class="nav-btn en active" href="02-about.html">ABOUT</a>
         <a class="nav-btn en" href="00-index.html#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn" onclick="changeMode()">&#9788;</a>
       </div>
       <a class="ham-nav" onclick="hamMenu()">
         <div>
@@ -44,7 +45,8 @@
 
     <!-- title -->
     <div class="title">
-      <h1 class="en">ABOUT ME</h1>
+      <div class="star">&#10036;</div>
+      <h1 class="en">&nbsp; ABOUT ME</h1>
     </div>
 
     <div class="content">
@@ -58,7 +60,7 @@
           href="../doc/resume.pdf"
           download="resume_jochuanyang.pdf"
           target="_blank"
-          >DOWNLOAD RESUME</a
+          >DOWNLOAD RESUME &#8599;</a
         >
       </div>
 

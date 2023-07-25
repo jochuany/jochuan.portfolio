@@ -7,22 +7,24 @@
   justify-content: center;
 }
 .title {
+  color: var(--word);
+  display: flex;
   margin-bottom: 70px;
 }
 h1 {
   font-size: 20px;
-  color: var(--primary);
+  color: var(--word);
   font-weight: 700;
 }
 .more-btn a {
   color: var(--primary);
   margin-top: 30px;
-  border-bottom: var(--primary) dotted 2px;
+  border-bottom: var(--primary) solid 1px;
   transition: ease 0.3s;
-  font-size: 16px;
+  font-size: 14px;
 }
 .more-btn a:hover {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .main {
@@ -85,7 +87,7 @@ h1 {
 }
 .project .project-pic img {
   width: 300px;
-  filter: grayscale(80%);
+  filter: grayscale(100%);
   transition: ease 0.5s;
 }
 .project .project-pic img:hover {

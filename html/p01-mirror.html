@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JoChuan | Project | Mirror Mirror of Your Own</title>
+    <title>Project - Mirror Mirror of Your Own | JoChuan.</title>
     <link rel="icon" type="image/x-icon" href="../image/00-main/favicon.png" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/font.css" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/proj-indiv.css" />
     <script src="../js/all.js"></script>
   </head>
-  <body onload="loadFade()">
+  <body onload="loadFade(), checkMode()">
     <!-- ham-menu -->
     <div id="ham-menu">
       <div class="ham-menu">
@@ -20,6 +20,7 @@
         <a class="en" href="01-project.html">PROJECT</a>
         <a class="en" href="02-about.html">ABOUT</a>
         <a class="en" href="00-index.html#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn" onclick="changeMode()">&#9788;</a>
       </div>
     </div>
 
@@ -54,19 +55,21 @@
             <p>YEAR:</p>
             <p>TYPE:</p>
             <p>TOOL:</p>
+            <p>ROLE:</p>
           </div>
           <div class="det-content">
             <p class="en">2023</p>
             <p class="ch">互動裝置</p>
-            <p class="en">UNITY 3D(C#), BLENDER</p>
+            <p class="en">Unity 3D(C#), Blender</p>
+            <p class="ch">程式<span class="en">(30%)</span>、酒吧景建模</p>
           </div>
         </div>
       </div>
 
       <div class="pre-next">
-        <a href="#" class="en trans">&lt; previous</a>
-        <span>|</span>
-        <a href="p02-3Dgame.html" class="en">next &gt;</a>
+        <a href="#" class="en trans">&larr; prev</a>
+        <span>&#183;</span>
+        <a href="p02-3Dgame.html" class="en">next &rarr;</a>
       </div>
     </div>
 

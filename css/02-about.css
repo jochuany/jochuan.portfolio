@@ -4,14 +4,16 @@
   margin: auto;
   margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 h1 {
   color: var(--word);
   font-size: 20px;
   font-weight: 700;
+}
+.title .star {
+  line-height: 28px;
 }
 
 .content {
@@ -44,7 +46,7 @@ h1 {
   color: var(--primary);
   font-size: 12px;
   font-weight: 400;
-  border-bottom: var(--primary) dotted 2px;
+  border-bottom: var(--primary) solid 1px;
   transition: ease 0.3s;
 }
 

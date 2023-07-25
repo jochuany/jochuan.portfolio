@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/00-index.css" />
     <script src="../js/all.js"></script>
   </head>
-  <body onload="loadFade()">
+  <body onload="loadFade(), checkMode()">
     <!-- ham-menu -->
     <div id="ham-menu">
       <div class="ham-menu">
@@ -32,6 +32,7 @@
         <a class="nav-btn en" href="01-project.html">PROJECT</a>
         <a class="nav-btn en" href="02-about.html">ABOUT</a>
         <a class="nav-btn en" href="#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn" onclick="changeMode()">&#9788;</a>
       </div>
       <a class="ham-nav" onclick="hamMenu()">
         <div>
@@ -59,7 +60,8 @@
     <!-- project -->
     <div class="section project" id="project">
       <div class="title">
-        <h1 class="en">PROJECT</h1>
+        <div class="star en">&#10036;</div>
+        <h1 class="en">&nbsp; PROJECT</h1>
       </div>
       <div class="project-pic">
         <a href="p01-mirror.html"
@@ -76,14 +78,15 @@
         /></a>
       </div>
       <div class="more-btn">
-        <a class="en" href="01-project.html">VIEW ALL</a>
+        <a class="en" href="01-project.html">VIEW ALL &rarr;</a>
       </div>
     </div>
 
     <!-- about -->
     <div class="section about" id="about">
       <div class="title">
-        <h1 class="en">ABOUT</h1>
+        <div class="star en">&#10036;</div>
+        <h1 class="en">&nbsp; ABOUT</h1>
       </div>
       <div class="para">
         <p class="ch">
@@ -100,20 +103,23 @@
         </p>
       </div>
       <div class="more-btn">
-        <a class="en" href="02-about.html">MORE ABOUT ME</a>
+        <a class="en" href="02-about.html">MORE ABOUT ME &rarr;</a>
       </div>
     </div>
 
     <!-- contact -->
     <div class="section contact" id="contact">
       <div class="title">
-        <h1 class="en">CONTACT</h1>
+        <div class="star en">&#10036;</div>
+        <h1 class="en">&nbsp; CONTACT</h1>
       </div>
       <div class="para">
         <p class="en">E-MAIL: ruochuanyang@gmail.com</p>
       </div>
       <div class="more-btn">
-        <a class="en" href="mailto: ruochuanyang@gmail.com">SEND E-MAIL</a>
+        <a class="en" href="mailto: ruochuanyang@gmail.com"
+          >SEND E-MAIL &#8599;</a
+        >
       </div>
     </div>
 
