@@ -17,12 +17,13 @@ h1 {
   width: 960px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   margin-bottom: 50px;
 }
 
 .content .pic-name {
-  width: 300px;
+  width: 200px;
 }
 
 .content .pic-name img {
@@ -56,10 +57,10 @@ h1 {
 }
 
 .content .info .para {
-  height: 220px;
   color: var(--word);
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 110px;
 }
 
 .content .info h2 {
@@ -69,8 +70,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-.content .info .skills {
-  height: 350px;
+.content .info .skills,
+.content .info .edu,
+.content .info .exp {
+  margin-bottom: 100px;
 }
 
 .content .info .skills span {
@@ -81,25 +84,6 @@ h1 {
   border-radius: 20px;
   background-color: var(--alpha-word-light);
   color: var(--info);
-}
-
-/* .content .info .tool-use .icon img {
-  width: 30px;
-  margin-right: 10px;
-}
-.content .info .tool-use .icon-d img {
-  width: 30px;
-  margin-right: 10px;
-}
-#icon {
-  display: block;
-}
-#icon-d {
-  display: none;
-} */
-
-.content .info .edu {
-  height: 300px;
 }
 
 .content .info .detail {
@@ -151,8 +135,11 @@ h1 {
   .content .info .tool-use img {
     margin-bottom: 10px;
   }
-  .content .detail .con-detail {
-    justify-content: space-between;
+  .content .info .detail .con-detail .year {
+    width: 100px;
+  }
+  .content .info .detail .con-detail .place {
+    width: 200px;
   }
 }
 
@@ -176,5 +163,15 @@ h1 {
   }
   .content .info .para {
     font-size: 14px;
+  }
+  .content .info .detail .con-detail {
+    display: block;
+  }
+  .content .info .detail .con-detail .year {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content .info .detail .con-detail .place {
+    width: 100%;
   }
 }
