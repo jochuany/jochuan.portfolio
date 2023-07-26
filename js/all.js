@@ -40,8 +40,8 @@ function darkMode() {
     "rgba(240, 240, 240, 0.08)"
   );
 
-  document.getElementById("mode-btn-ham").innerHTML = "&#9788;";
-  document.getElementById("mode-btn-header").innerHTML = "&#9788;";
+  // document.getElementById("mode-btn-ham").innerHTML = "&#9788;";
+  // document.getElementById("mode-btn-header").innerHTML = "&#9788;";
 }
 
 //white
@@ -65,8 +65,8 @@ function whiteMode() {
     "rgba(24, 24, 24, 0.08)"
   );
 
-  document.getElementById("mode-btn-ham").innerHTML = "&#9789;";
-  document.getElementById("mode-btn-header").innerHTML = "&#9789;";
+  // document.getElementById("mode-btn-ham").innerHTML = "&#9789;";
+  // document.getElementById("mode-btn-header").innerHTML = "&#9789;";
 }
 
 //check mode
