@@ -1,15 +1,15 @@
 html {
   scroll-behavior: smooth;
-  cursor: url(../image/00-main/arrow.png), auto;
-}
-a {
-  cursor: url(../image/00-main/point.png), auto;
 }
 :root {
   --primary: #ffe38f;
   --info: #777777;
   --word: #f0f0f0;
   --bgc: #181818;
+  --alpha-bgc: rgba(24, 24, 24, 0.9);
+  --alpha-word: rgba(240, 240, 240, 0.9);
+  --alpha-bgc-light: rgba(24, 24, 24, 0.08);
+  --alpha-word-light: rgba(240, 240, 240, 0.08);
 }
 body {
   opacity: 0;
@@ -17,17 +17,21 @@ body {
   transition: all 1s ease-in-out;
 }
 *::selection {
-  background-color: #daa300;
+  background-color: #114a8a;
+  color: var(--bgc);
 }
-#mode-btn {
+#mode-btn-ham,
+#mode-btn-header {
+  width: 20px;
   display: inline-block;
-  width: 15px;
-  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .en {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   line-height: 28px;
 }
 .ch {
@@ -50,29 +54,33 @@ a {
 }
 .header .home a,
 .header .nav a {
-  border-radius: 20px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header .home-btn {
   color: var(--word);
+  border-bottom: var(--bgc) solid 1px;
   transition: ease 0.3s;
 }
 .header .home-btn:hover {
-  color: var(--info);
-  font-weight: 700;
+  border-bottom: var(--word) solid 1px;
 }
 .header .nav-btn {
   color: var(--word);
+  border-bottom: var(--bgc) solid 1px;
   margin-left: 20px;
   transition: ease 0.3s;
 }
 .header .nav-btn:hover {
-  color: var(--info);
-  font-weight: 700;
+  border-bottom: var(--word) solid 1px;
 }
 .header .active {
   color: var(--primary);
+  border-bottom: var(--bgc) solid 1px;
+}
+.header .active:hover {
+  color: var(--primary);
+  border-bottom: var(--primary) solid 1px;
 }
 .header .ham-nav {
   display: none;
@@ -91,12 +99,11 @@ a {
   text-decoration: none;
   color: var(--primary);
   font-size: 14px;
-  /* border-bottom: var(--primary) solid 1px; */
+  border-bottom: var(--bgc) solid 1px;
   transition: ease 0.3s;
 }
 .footer .to-top a:hover {
-  /* letter-spacing: 5px; */
-  color: var(--info);
+  border-bottom: var(--primary) solid 1px;
 }
 
 .footer .copyright {
@@ -106,11 +113,14 @@ a {
 #ham-menu {
   display: none;
 }
+
 .star {
+  letter-spacing: 0;
   color: var(--word);
-  font-size: 20px;
+  font-size: 24px;
   animation: rotation 2s infinite linear;
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -135,6 +145,9 @@ a {
 @media screen and (max-width: 720px) {
   .header {
     width: 80%;
+  }
+  #mode-btn-header {
+    display: none;
   }
 
   .footer {
@@ -163,7 +176,7 @@ a {
     height: 100vh;
     position: fixed;
     z-index: 100;
-    background-color: rgba(24, 24, 24, 0.9);
+    background-color: var(--alpha-bgc);
     display: flex;
     flex-direction: column;
     justify-content: center;

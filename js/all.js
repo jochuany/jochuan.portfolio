@@ -27,8 +27,21 @@ function darkMode() {
   document.documentElement.style.setProperty("--info", "#777777");
   document.documentElement.style.setProperty("--word", "#f0f0f0");
   document.documentElement.style.setProperty("--bgc", "#181818");
+  document.documentElement.style.setProperty(
+    "--alpha-bgc",
+    "rgba(24, 24, 24, 0.9)"
+  );
+  document.documentElement.style.setProperty(
+    "--alpha-word",
+    "rgba(240, 240, 240, 0.9)"
+  );
+  document.documentElement.style.setProperty(
+    "--alpha-word-light",
+    "rgba(240, 240, 240, 0.08)"
+  );
 
-  document.getElementById("mode-btn").innerHTML = "&#9788;";
+  document.getElementById("mode-btn-ham").innerHTML = "&#9788;";
+  document.getElementById("mode-btn-header").innerHTML = "&#9788;";
 }
 
 //white
@@ -39,16 +52,31 @@ function whiteMode() {
   document.documentElement.style.setProperty("--info", "#a3a3a3");
   document.documentElement.style.setProperty("--word", "#181818");
   document.documentElement.style.setProperty("--bgc", "#f0f0f0");
+  document.documentElement.style.setProperty(
+    "--alpha-bgc",
+    "rgba(240, 240, 240, 0.9)"
+  );
+  document.documentElement.style.setProperty(
+    "--alpha-word",
+    "rgba(24, 24, 24, 0.9)"
+  );
+  document.documentElement.style.setProperty(
+    "--alpha-word-light",
+    "rgba(24, 24, 24, 0.08)"
+  );
 
-  document.getElementById("mode-btn").innerHTML = "&#9789;";
+  document.getElementById("mode-btn-ham").innerHTML = "&#9789;";
+  document.getElementById("mode-btn-header").innerHTML = "&#9789;";
 }
 
 //check mode
 function checkMode() {
   if (nowMode === "dark") {
     darkMode();
+    changeImageDarkMode();
   } else {
     whiteMode();
+    changeImageWhiteMode();
   }
 }
 
@@ -57,8 +85,19 @@ function changeMode() {
   if (nowMode === "dark") {
     nowMode = "white";
     whiteMode();
+    changeImageWhiteMode();
   } else {
     nowMode = "dark";
     darkMode();
+    changeImageDarkMode();
   }
+}
+
+//change imgae
+function changeImageWhiteMode() {
+  document.getElementById("logo").src = "../image/00-main/logo-b.png";
+}
+
+function changeImageDarkMode() {
+  document.getElementById("logo").src = "../image/00-main/logo-w.png";
 }

@@ -1,0 +1,148 @@
+.section {
+  width: 960px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  color: var(--word);
+  display: flex;
+  margin-bottom: 70px;
+}
+h1 {
+  font-size: 18px;
+  color: var(--word);
+  font-weight: 700;
+}
+.more-btn a {
+  color: var(--primary);
+  margin-top: 30px;
+  border-bottom: var(--primary) solid 1px;
+  transition: ease 0.3s;
+  font-size: 14px;
+}
+.more-btn a:hover {
+  border-bottom: var(--bgc) solid 1px;
+}
+
+.main {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .logo img {
+  width: 200px;
+  opacity: 0;
+  animation: fade-in 2s 1s ease-in-out forwards;
+}
+.main .down-btn {
+  text-decoration: none;
+  color: var(--word);
+  font-size: 12px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: shine 2s 3s ease-in-out infinite;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.project .project-pic {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project .project-pic a {
+  margin-bottom: 30px;
+}
+.project .project-pic img {
+  width: 300px;
+  filter: grayscale(100%);
+  transition: ease 0.5s;
+}
+.project .project-pic img:hover {
+  filter: grayscale(0%);
+}
+
+.para {
+  color: var(--word);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    width: 600px;
+  }
+  .main .logo img {
+    width: 150px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .project {
+    margin-bottom: 100px;
+  }
+  .project .project-pic {
+    width: 600px;
+  }
+  .project .project-pic img {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .section {
+    width: 80%;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .more-btn a {
+    font-size: 14px;
+  }
+  .main .logo img {
+    width: 100px;
+  }
+  .project {
+    height: fit-content;
+    padding-top: 80px;
+  }
+  .project .project-pic {
+    width: 100%;
+  }
+  .project .project-pic img {
+    width: 100%;
+  }
+  .about .para {
+    font-size: 14px;
+  }
+}

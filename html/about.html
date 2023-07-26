@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | JoChuan.</title>
+    <link rel="icon" type="image/x-icon" href="../image/00-main/favicon.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <script src="../js/all.js"></script>
+  </head>
+  <body onload="loadFade(), checkMode()">
+    <!-- ham-menu -->
+    <div id="ham-menu">
+      <div class="ham-menu">
+        <a class="en" href="index.html">HOME</a>
+        <a class="en" href="project.html">PROJECT</a>
+        <a class="en" href="about.html">ABOUT</a>
+        <a class="en" href="index.html#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn-ham" onclick="changeMode()"
+          >&#9788;</a
+        >
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header" id="header">
+      <div class="home">
+        <a class="home-btn en" href="index.html">JOCHUAN.</a>
+      </div>
+      <div class="nav">
+        <a class="nav-btn en" href="project.html">PROJECT</a>
+        <a class="nav-btn en active" href="about.html">ABOUT</a>
+        <a class="nav-btn en" href="index.html#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn-header" onclick="changeMode()"
+          >&#9788;</a
+        >
+      </div>
+      <a class="ham-nav" onclick="hamMenu()">
+        <div>
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- title -->
+    <div class="title">
+      <div class="star en">&#10039;</div>
+      <h1 class="en">&nbsp; ABOUT ME</h1>
+    </div>
+
+    <div class="content">
+      <!-- pic & name -->
+      <div class="pic-name">
+        <img src="../image/00-main/me.png" alt="" />
+        <h3 class="ch">楊若絹</h3>
+        <h3 class="en">JoChuan Yang</h3>
+        <a
+          class="en"
+          href="../doc/resume.pdf"
+          download="resume_jochuanyang.pdf"
+          target="_blank"
+          >DOWNLOAD RESUME &#10138;</a
+        >
+      </div>
+
+      <!-- info -->
+      <div class="info">
+        <div class="para">
+          <p class="ch">
+            擅長平面設計、動畫製作<br />
+            製作過<span class="en"> Podcast </span>、會用<span class="en">
+              Unity </span
+            >製作單機遊戲<br />
+            目前正自學前端語言與框架<br />
+            立志成為擁有設計和程式技能的跨領域工作者
+          </p>
+        </div>
+
+        <!-- skills -->
+        <div class="skills">
+          <h2 class="en">SKILLS</h2>
+          <div class="detail">
+            <div class="con-detail">
+              <div class="year en">TOOLS</div>
+              <div class="place ch">
+                <span>Adobe Illustrator</span>
+                <span>Adobe PhotoShop</span>
+                <span>Adobe Lightroom</span>
+                <span>Adobe Indesign</span>
+                <span>Adobe After Effects</span>
+                <span>Adobe Premiere</span>
+                <span>Blender</span>
+                <span>Figma</span>
+                <span>Unity</span>
+                <span>VS code</span>
+              </div>
+            </div>
+            <div class="con-detail">
+              <div class="year en">LANGUAGES</div>
+              <div class="place ch">
+                <span>C# (in Unity)</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="icon" id="icon">
+            <img id="ai" src="../image/00-about/ai.png" alt="" />
+            <img id="ae" src="../image/00-about/ae.png" alt="" />
+            <img id="ps" src="../image/00-about/ps.png" alt="" />
+            <img id="lr" src="../image/00-about/lr.png" alt="" />
+            <img id="id" src="../image/00-about/id.png" alt="" />
+            <img id="pr" src="../image/00-about/pr.png" alt="" />
+            <img id="fg" src="../image/00-about/figma.png" alt="" />
+            <img id="bl" src="../image/00-about/blender.png" alt="" />
+            <img id="un" src="../image/00-about/unity.png" alt="" />
+            <img id="vs" src="../image/00-about/vscode.png" alt="" /> 
+          </div> -->
+        </div>
+
+        <!-- edu -->
+        <div class="edu">
+          <h2 class="en">EDUCATION</h2>
+          <div class="detail">
+            <div class="con-detail">
+              <div class="year en">2023 -</div>
+              <div class="place ch">
+                <p>傳播碩士學位學程<br />國立政治大學</p>
+              </div>
+            </div>
+            <div class="con-detail">
+              <div class="year en">2018 - 2023</div>
+              <div class="place ch">
+                <p>廣告系、數位內容與科技學士學位學程<br />國立政治大學</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- exp -->
+        <div class="exp">
+          <h2 class="en">EXPERIENCE</h2>
+          <div class="detail">
+            <div class="con-detail">
+              <div class="year en">2022 - 2023</div>
+              <div class="place ch">
+                <p>工讀生<br />政大國合處</p>
+                <ul>
+                  <li>活動海報製作</li>
+                  <li>社群圖製作</li>
+                  <li>活動攝影</li>
+                  <li>資訊動畫製作</li>
+                </ul>
+              </div>
+            </div>
+            <div class="con-detail">
+              <div class="year en">2019 - 2022</div>
+              <div class="place ch">
+                <p>實習助理<br />政大之聲廣播電台</p>
+                <ul>
+                  <li>校園講座、社區專題新聞採訪、撰稿</li>
+                  <li>當日重要新聞編輯、播報</li>
+                  <li>節目企劃、主持、訪談</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="to-top">
+        <a href="#header" class="en">&uarr; TO TOP</a>
+      </div>
+      <div class="copyright">
+        <p class="en">Copyright &copy; 2023 JOCHUAN</p>
+      </div>
+      <div></div>
+    </div>
+    <!--  -->
+  </body>
+</html>

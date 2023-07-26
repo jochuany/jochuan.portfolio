@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoChuan Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../image/00-main/favicon.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/all.js"></script>
+  </head>
+  <body onload="loadFade(), checkMode()">
+    <!-- ham-menu -->
+    <div id="ham-menu">
+      <div class="ham-menu">
+        <a class="en" href="index.html">HOME</a>
+        <a class="en" href="project.html">PROJECT</a>
+        <a class="en" href="about.html">ABOUT</a>
+        <a class="en" href="index.html#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn-ham" onclick="changeMode()"
+          >&#9788;</a
+        >
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header" id="header">
+      <div class="home">
+        <a class="home-btn en active" href="index.html">JOCHUAN.</a>
+      </div>
+      <div class="nav">
+        <a class="nav-btn en" href="project.html">PROJECT</a>
+        <a class="nav-btn en" href="about.html">ABOUT</a>
+        <a class="nav-btn en" href="#contact">CONTACT</a>
+        <a class="nav-btn en" id="mode-btn-header" onclick="changeMode()"
+          >&#9788;</a
+        >
+      </div>
+      <a class="ham-nav" onclick="hamMenu()">
+        <div>
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- main -->
+    <div class="section main" id="main">
+      <div></div>
+      <div class="logo">
+        <img id="logo" src="../image/00-main/logo-w.png" alt="" />
+      </div>
+      <div>
+        <a href="#project" class="down-btn en">SCROLL</a>
+      </div>
+    </div>
+
+    <!-- project -->
+    <div class="section project" id="project">
+      <div class="title">
+        <div class="star en">&#10039;</div>
+        <h1 class="en">&nbsp; PROJECT</h1>
+      </div>
+      <div class="project-pic">
+        <a href="project-01.html"
+          ><img src="../image/00-main/work-mirror.png" alt=""
+        /></a>
+        <a href="project-02.html"
+          ><img src="../image/00-main/work-3D.png" alt=""
+        /></a>
+        <a href="project-03.html"
+          ><img src="../image/00-main/work-animiga.png" alt=""
+        /></a>
+        <a href="project-04.html"
+          ><img src="../image/00-main/work-animmv.png" alt=""
+        /></a>
+      </div>
+      <div class="more-btn">
+        <a class="en" href="project.html">VIEW ALL &#10137;</a>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="section about" id="about">
+      <div class="title">
+        <div class="star en">&#10039;</div>
+        <h1 class="en">&nbsp; ABOUT</h1>
+      </div>
+      <div class="para">
+        <p class="ch">
+          擅長平面設計、動畫製作<br />
+          製作過<span class="en"> Podcast </span>、會用<span class="en">
+            Unity </span
+          >製作單機遊戲<br />
+          目前正自學前端語言與框架<br />
+          立志成為擁有設計和程式技能的跨領域工作者<br /><br />
+          畢業於國立政治大學廣告學系傳播設計組<br />
+          雙主修數位內容與科技學士學位學程<br />
+          即將於<span class="en"> 2023 </span>年<span class="en"> 9 </span
+          >月就讀國立政治大學傳播研究所
+        </p>
+      </div>
+      <div class="more-btn">
+        <a class="en" href="about.html">MORE ABOUT ME &#10137;</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="section contact" id="contact">
+      <div class="title">
+        <div class="star en">&#10039;</div>
+        <h1 class="en">&nbsp; CONTACT</h1>
+      </div>
+      <div class="para">
+        <p class="en">E-MAIL: ruochuanyang@gmail.com</p>
+      </div>
+      <div class="more-btn">
+        <a class="en" href="mailto: ruochuanyang@gmail.com"
+          >SEND E-MAIL &#10138;</a
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="to-top">
+        <a href="#header" class="en">&uarr; TO TOP</a>
+      </div>
+      <div class="copyright">
+        <p class="en">Copyright &copy; 2023 JOCHUAN</p>
+      </div>
+      <div></div>
+    </div>
+    <!--  -->
+  </body>
+</html>
