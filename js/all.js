@@ -1,9 +1,9 @@
-//loadFade
+//load fade in
 function loadFade() {
   document.body.style.opacity = "1";
 }
 
-//hamMenu
+//hamburger btn toggle
 function hamMenu() {
   let ham = document.getElementById("ham-menu");
   ham.classList.toggle("show");
@@ -17,12 +17,15 @@ function hamMenu() {
   lineB.classList.toggle("line-3-45");
 }
 
+//localStorage setting
 let nowMode = localStorage.getItem("mode");
 
-//dark
+//turn to dark mode
 function darkMode() {
+  //set localStorage
   localStorage.setItem("mode", "dark");
 
+  //change color
   document.documentElement.style.setProperty("--primary", "#ffe38f");
   document.documentElement.style.setProperty("--info", "#777777");
   document.documentElement.style.setProperty("--word", "#f0f0f0");
@@ -39,15 +42,18 @@ function darkMode() {
     "--alpha-word-light",
     "rgba(240, 240, 240, 0.08)"
   );
-
-  // document.getElementById("mode-btn-ham").innerHTML = "&#9788;";
-  // document.getElementById("mode-btn-header").innerHTML = "&#9788;";
+  document.documentElement.style.setProperty(
+    "--mouse-light",
+    "rgba(255, 227, 143, 0.08)"
+  );
 }
 
-//white
+//turn to white mode
 function whiteMode() {
+  //set localStorage
   localStorage.setItem("mode", "white");
 
+  //change color
   document.documentElement.style.setProperty("--primary", "#daa300");
   document.documentElement.style.setProperty("--info", "#a3a3a3");
   document.documentElement.style.setProperty("--word", "#181818");
@@ -64,40 +70,57 @@ function whiteMode() {
     "--alpha-word-light",
     "rgba(24, 24, 24, 0.08)"
   );
-
-  // document.getElementById("mode-btn-ham").innerHTML = "&#9789;";
-  // document.getElementById("mode-btn-header").innerHTML = "&#9789;";
+  document.documentElement.style.setProperty(
+    "--mouse-light",
+    "rgba(218, 163, 0, 0.06)"
+  );
 }
 
-//check mode
+//check right now mode
 function checkMode() {
   if (nowMode === "dark") {
+    //if now mode = dark, set to dark mode
     darkMode();
     changeImageDarkMode();
   } else {
+    //if now mode = white, set to white mode
     whiteMode();
     changeImageWhiteMode();
   }
 }
 
-//change mode
+//click mode btn to change mode
 function changeMode() {
   if (nowMode === "dark") {
+    //if mow mode = dark, change to white mode
     nowMode = "white";
     whiteMode();
     changeImageWhiteMode();
   } else {
+    //if now mode = white, change to dark mode
     nowMode = "dark";
     darkMode();
     changeImageDarkMode();
   }
 }
 
-//change imgae
+//change logo image
 function changeImageWhiteMode() {
+  //white mode -> change to dark logo
   document.getElementById("logo").src = "../image/00-main/logo-b.png";
 }
 
 function changeImageDarkMode() {
+  //dark mode -> change to white logo
   document.getElementById("logo").src = "../image/00-main/logo-w.png";
+}
+
+//set mouse
+
+document.addEventListener("mousemove", mouseFollow);
+
+function mouseFollow(e) {
+  let mouse = document.getElementById("mouse");
+  mouse.style.left = e.pageX + "px";
+  mouse.style.top = e.pageY + "px";
 }

@@ -10,6 +10,7 @@ html {
   --alpha-word: rgba(240, 240, 240, 0.9);
   --alpha-bgc-light: rgba(24, 24, 24, 0.08);
   --alpha-word-light: rgba(240, 240, 240, 0.08);
+  --mouse-light: rgba(255, 227, 143, 0.08);
 }
 body {
   opacity: 0;
@@ -25,6 +26,13 @@ body {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+}
+#mouse {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 150px 150px var(--mouse-light);
+  z-index: -1;
 }
 
 .en {
