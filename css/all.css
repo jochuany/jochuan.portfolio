@@ -15,11 +15,11 @@ html {
 body {
   opacity: 0;
   background-color: var(--bgc);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
 }
 *::selection {
-  background-color: #114a8a;
-  color: var(--bgc);
+  background-color: #e7c560;
+  color: var(--word);
 }
 #mode-btn-ham,
 #mode-btn-header {
@@ -65,7 +65,7 @@ a {
 }
 .header .home-btn {
   color: var(--word);
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
   transition: ease 0.3s;
 }
 .header .home-btn:hover {
@@ -73,7 +73,7 @@ a {
 }
 .header .nav-btn {
   color: var(--word);
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
   margin-left: 20px;
   transition: ease 0.3s;
 }
@@ -82,7 +82,7 @@ a {
 }
 .header .active {
   color: var(--primary);
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
 }
 .header .active:hover {
   color: var(--primary);
@@ -105,7 +105,7 @@ a {
   text-decoration: none;
   color: var(--primary);
   font-size: 14px;
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
   transition: ease 0.3s;
 }
 .footer .to-top a:hover {

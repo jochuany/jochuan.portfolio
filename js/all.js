@@ -1,6 +1,7 @@
 //load fade in
 function loadFade() {
   document.body.style.opacity = "1";
+  checkMode();
 }
 
 //hamburger btn toggle
@@ -46,6 +47,9 @@ function darkMode() {
     "--mouse-light",
     "rgba(255, 227, 143, 0.08)"
   );
+
+  //change logo to white
+  document.getElementById("logo").src = "../image/00-main/logo-w.png";
 }
 
 //turn to white mode
@@ -74,18 +78,19 @@ function whiteMode() {
     "--mouse-light",
     "rgba(218, 163, 0, 0.06)"
   );
+
+  //change logo to black
+  document.getElementById("logo").src = "../image/00-main/logo-b.png";
 }
 
-//check right now mode
+//check right now mode and turn to that mode
 function checkMode() {
   if (nowMode === "dark") {
     //if now mode = dark, set to dark mode
     darkMode();
-    changeImageDarkMode();
   } else {
     //if now mode = white, set to white mode
     whiteMode();
-    changeImageWhiteMode();
   }
 }
 
@@ -95,30 +100,17 @@ function changeMode() {
     //if mow mode = dark, change to white mode
     nowMode = "white";
     whiteMode();
-    changeImageWhiteMode();
   } else {
     //if now mode = white, change to dark mode
     nowMode = "dark";
     darkMode();
-    changeImageDarkMode();
   }
 }
 
-//change logo image
-function changeImageWhiteMode() {
-  //white mode -> change to dark logo
-  document.getElementById("logo").src = "../image/00-main/logo-b.png";
-}
-
-function changeImageDarkMode() {
-  //dark mode -> change to white logo
-  document.getElementById("logo").src = "../image/00-main/logo-w.png";
-}
-
 //set mouse
-
 document.addEventListener("mousemove", mouseFollow);
 
+//mouse follow
 function mouseFollow(e) {
   let mouse = document.getElementById("mouse");
   mouse.style.left = e.pageX + "px";

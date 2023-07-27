@@ -35,7 +35,7 @@ h1 {
   transition: ease 0.3s;
 }
 .top .pre-next a:hover {
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
 }
 .top .pre-next .trans {
   display: none;
