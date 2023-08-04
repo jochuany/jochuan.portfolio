@@ -24,7 +24,7 @@ h1 {
   font-size: 14px;
 }
 .more-btn a:hover {
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
 }
 
 .main {
