@@ -49,7 +49,7 @@ h1 {
 }
 
 .content .pic-name a:hover {
-  border-bottom: var(--bgc) solid 1px;
+  border-bottom: transparent solid 1px;
 }
 
 .content .info {

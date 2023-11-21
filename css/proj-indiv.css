@@ -94,6 +94,16 @@ h1 {
 .mob-next {
   display: none;
 }
+.video{
+  display: flex;
+  justify-content: center;
+}
+.cover{
+  width: 960px;
+}
+.cover img{
+  width: 960px;
+}
 
 @media screen and (max-width: 1024px) {
   .top {
@@ -111,6 +121,9 @@ h1 {
     width: 600px;
   }
   video {
+    width: 600px;
+  }
+  .cover img{
     width: 600px;
   }
   .section .pics img {
@@ -160,6 +173,12 @@ h1 {
     width: 100%;
   }
   video {
+    width: 100%;
+  }
+  .cover{
+    width: 100%;
+  }
+  .cover img{
     width: 100%;
   }
   .section .pics img {
