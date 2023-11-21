@@ -18,7 +18,7 @@ function hamMenu() {
   lineB.classList.toggle("line-3-45");
 }
 
-//localStorage setting
+/*//localStorage setting
 let nowMode = localStorage.getItem("mode");
 
 //turn to dark mode
@@ -105,7 +105,7 @@ function changeMode() {
     nowMode = "dark";
     darkMode();
   }
-}
+}*/
 
 //set mouse
 document.addEventListener("mousemove", mouseFollow);

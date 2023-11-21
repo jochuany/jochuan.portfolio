@@ -7,8 +7,8 @@ html {
   --word: #f0f0f0;
   --bgc: #181818;
   --alpha-bgc: rgba(24, 24, 24, 0.9);
-  --alpha-word: rgba(240, 240, 240, 0.9);
-  --alpha-bgc-light: rgba(24, 24, 24, 0.08);
+  /*--alpha-word: rgba(240, 240, 240, 0.9);*/
+  /*--alpha-bgc-light: rgba(24, 24, 24, 0.08);*/
   --alpha-word-light: rgba(240, 240, 240, 0.08);
   --mouse-light: rgba(255, 227, 143, 0.08);
 }
