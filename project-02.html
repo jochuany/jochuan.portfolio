@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Cross the Zhinan Road | JoChuan.</title>
+    <link rel="icon" type="image/x-icon" href="../image/00-main/favicon.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/proj-indiv.css" />
+    <script src="../js/all.js"></script>
+  </head>
+  <body onload="loadFade()">
+    <!-- mouse -->
+    <div id="mouse"></div>
+
+    <!-- ham-menu -->
+    <div id="ham-menu">
+      <div class="ham-menu">
+        <a class="en" href="index.html">HOME</a>
+        <a class="en" href="project.html">PROJECT</a>
+        <a class="en" href="about.html">ABOUT</a>
+        <a class="en" href="index.html#contact">CONTACT</a>
+        <!-- <a class="nav-btn en" id="mode-btn-ham" onclick="changeMode()"
+          >&#9680;</a
+        > -->
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header" id="header">
+      <div class="home">
+        <a class="home-btn en" href="index.html">JOCHUAN.</a>
+      </div>
+      <div class="nav">
+        <a class="nav-btn en active" href="project.html#02">PROJECT</a>
+        <a class="nav-btn en" href="about.html">ABOUT</a>
+        <a class="nav-btn en" href="index.html#contact">CONTACT</a>
+        <!-- <a class="nav-btn en" id="mode-btn-header" onclick="changeMode()"
+          >&#9680;</a
+        > -->
+      </div>
+      <a class="ham-nav" onclick="hamMenu()">
+        <div>
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- title -->
+    <div class="top">
+      <div class="proj-name">
+        <div class="name">
+          <h1 class="ch">麥側過馬路</h1>
+          <h1 class="en">Cross the Zhinan Road</h1>
+        </div>
+        <div class="detail">
+          <div class="det-head en">
+            <p>YEAR:</p>
+            <p>TYPE:</p>
+            <p>ROLE:</p>
+          </div>
+          <div class="det-content">
+            <p class="en">2023</p>
+            <p class="ch">
+              遊戲
+              <a
+                href="https://rjyang.itch.io/cross-the-zhinan-road"
+                target="_blank"
+              >
+                PLAY(CHROME) &#10138;
+              </a>
+            </p>
+            <p class="ch">程式<span class="en">(90%)</span>、場景調光</p>
+          </div>
+        </div>
+        <div class="tool">
+          <span class="en">Unity 3D</span>
+          <span class="en">C#</span>
+          <span class="en">Blender</span>
+        </div>
+      </div>
+
+      <div class="pre-next">
+        <a href="project-01.html" class="en">&larr; prev</a>
+        <span>&#183;</span>
+        <a href="project-03.html" class="en">next &rarr;</a>
+      </div>
+    </div>
+
+    <!-- section -->
+    <div class="section">
+      <!-- video -->
+      <div class="video">
+        <video width="960" controls>
+          <source src="../video/3D-Demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- intro -->
+      <div class="intro ch">
+        <p>
+          政大麥側旁的指南路存在許多交通問題，交通吞吐量不足、缺少交通號誌、狹窄的人行道與公車站，對政大學生的交通安全有極大威脅。<br />
+          此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。<br /><br />
+          這是我第一次負責程式的專案，我認為收穫最大的部分是一步一步精簡程式、解決<span class="en"> bug </span>的過程。遊戲中關卡內的小道具與功能都是開始開發後才加入的，讓我發覺到我們在企劃階段構思的不足，前期缺少模擬遊戲進行的原型，若能做到相信開發過程會更加順利。
+        </p>
+      </div>
+
+      <!-- pics -->
+      <div class="pics">
+        <img src="../image/02-3Dgame/3D-02.png" alt="" />
+        <img src="../image/02-3Dgame/3D-03.png" alt="" />
+        <img src="../image/02-3Dgame/3D-04.png" alt="" />
+        <img src="../image/02-3Dgame/3D-05.png" alt="" />
+        <img src="../image/02-3Dgame/3D-06.png" alt="" />
+        <img src="../image/02-3Dgame/3D-07.png" alt="" />
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="to-top">
+        <a href="#header" class="en">&uarr; TO TOP</a>
+      </div>
+      <div class="copyright">
+        <p class="en">Copyright &copy; 2023 JOCHUAN</p>
+      </div>
+      <div></div>
+    </div>
+    <!--  -->
+  </body>
+</html>
